@@ -1,0 +1,53 @@
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+.input-group {
+  display: flex;
+  align-items: center;
+}
+.currency {
+  width: 200px;
+}
+.currency-group {
+  margin-top: 50px;
+}
+.calculate_form {
+  margin-top: 10em;
+  margin-left: 10em;
+}
+.content {
+  margin-left: 10%;
+  margin-top: 2em;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 32px;
+}
+.MuiInputBase-input {
+  font-size: 24px !important;
+  width: 200px !important;
+}
+.MuiFormLabel-root {
+  font-size: 24px !important;
+  color: #000 !important;
+  margin-right: 10px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
