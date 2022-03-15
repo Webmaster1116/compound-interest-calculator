@@ -40,6 +40,9 @@ class App extends Component {
       amount = this.state.fields.amount;
     }
 
+    let yield_day = Number(amount * daily_rate).toFixed(2);
+    let yield_month = Number(amount * month_rate).toFixed(2);
+    let yield_year = Number(amount * year_rate).toFixed(2);
     return (
       <div className="App">
         <Form onChange={(fields) => this.onChange(fields)} />
@@ -47,14 +50,14 @@ class App extends Component {
           {/* {JSON.stringify(this.state.fields, null, 2)} */}
 
           <div>Percentage: {percentage}%</div>
-          <div>yield per day: {amount * daily_rate}</div>
+          <div>yield per day: {yield_day}</div>
           <div>
             yield per month:
-            {amount * month_rate}
+            {yield_month}
           </div>
           <div>
             yield per year:
-            {amount * year_rate}
+            {yield_year}
           </div>
         </p>
       </div>
